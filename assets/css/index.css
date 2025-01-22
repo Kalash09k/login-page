@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --text-color: #19192C;
+    --primary-color: #9E9E9F;
+    --secondary-color: #8EA7E9;
+    --btn-color: #7286D3;
+
+    --font-family: "Poppins", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    padding-top: 4rem;
+    overflow: hidden;
+}
+
+html {
+    font-family: var(--font-family);
+    font-size: 15px;
+
+}
+
+
+
+.log-img {
+    flex: 1;
+    background-image: url(../images/login-image.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logform {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.login {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.email-inp {
+    display: flex;
+    color: var(--secondary-color);
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 1.5rem;
+    gap: 2rem;
+    width: 560px;
+    height: 30px;
+}
+
+.email-inp img {
+    padding-left: 1rem;
+}
+
+.psw-input img {
+    padding-left: 1rem;
+}
+
+.psw-input {
+    display: flex;
+    color: var(--secondary-color);
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 1.5rem;
+    gap: 2rem;
+    width: 560px;
+    height: 30px;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+.a {
+    align-self: end;
+}
+
+button {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--btn-color);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 1rem;
+}
+
+.btn-line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.alt-text {
+    align-items: center;
+    margin: 0 30px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    margin: 3rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10rem;
+}
+
+
+hr {
+    width: 15rem;
+    height: 1px;
+    background-color: var(--primary-color);
+}
+
+.psw-div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.email-div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+@media screen and (max-width > 414px) {
+ 
+    .log-img {
+      display: none;
+    }
+    
+  }
