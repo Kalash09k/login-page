@@ -5,6 +5,7 @@
     --primary-color: #9E9E9F;
     --secondary-color: #8EA7E9;
     --btn-color: #7286D3;
+    --logo-color: #FFF2F28A;
 
     --font-family: "Poppins", serif;
 }
@@ -33,6 +34,8 @@ html {
     background-image: url(../images/login-image.svg);
     background-size: contain;
     background-repeat: no-repeat;
+    width: 700px;
+    height: 719px;
 }
 
 .logform {
@@ -52,7 +55,7 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 .login {
@@ -154,10 +157,26 @@ hr {
     gap: .5rem;
 }
 
+.icons-circle {
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--logo-color);
+    border-radius: 50%;
+    border: solid .1rem var(--logo-color);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.icons-circle > img {
+    width: 4rem;
+    height: 4rem;
+}
+
 @media screen and (max-width > 414px) {
- 
+
     .log-img {
-      display: none;
+        display: none;
     }
-    
-  }
+
+}
